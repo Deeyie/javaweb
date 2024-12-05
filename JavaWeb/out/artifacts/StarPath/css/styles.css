@@ -1,0 +1,348 @@
+/* styles.css */
+
+/* 加载按钮样式 */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#enter-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #218688;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#enter-btn:hover {
+    background-color: #1b7070;
+}
+
+
+.container {
+    display: flex;
+    width: 100%; /* 控制最大宽度 */
+    margin: 0 auto; /* 居中容器 */
+}
+
+
+.left-column {
+    width: 30%;
+    height: auto;
+    position: fixed;
+    background-color:  transparent;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.middle-column {
+    width: 60%;
+    background-color: #eef9f4;
+    padding: 20px;
+    margin-left: 32%;
+    margin-right: 10px;
+}
+
+.right-column {
+    width: 10%;
+    background-color:  transparent;
+    padding: 20px;
+}
+
+
+.container .left-column img {
+    margin-top: 20%;
+    margin-left: 50%;
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    
+}
+
+
+/* 头像样式 */
+#avatar {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    display: block;
+    animation: rotate 15s linear infinite;
+}
+
+#avatar.paused {
+    animation-play-state: paused; /* 暂停音乐时停止旋转 */
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.container .left-column .story {
+    
+    background-color: #218688;
+}
+
+/*密码部分*/
+#password-protect {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#password-input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+}
+
+#submit-password {
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit-password:hover {
+    background-color: #1b7070;
+}
+
+
+
+.container .left-column .name {
+    text-align: center;
+    margin-top: 10%; /*调整文本与头像的距离 */
+    font-size: 36px;
+    color: aqua;
+}
+
+.container .left-column p {
+    margin-top: 5%; /* 调整文本的距离 */
+    font-size: 14px;
+}
+
+
+.middle-column h1{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.middle-column .content {
+    width: 100%;
+    text-align: center;
+}
+
+.middle-column .content h3 {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 5%;
+}
+
+/* 倒计时 */
+.countdown {
+    width: 30%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+    background-color: brown;
+    overflow: hidden;
+  }
+
+  .countdown .next {
+    font-size: 16px;
+    margin: 25px 0 14px;
+  }
+
+  .countdown .title {
+    font-size: 33px;
+  }
+
+  .countdown .days {
+    margin-top: 10%;
+    font-size: 23px;
+  }
+
+  .countdown small {
+    font-size: 17px;
+  }
+
+  .countdown .clock {
+    width: 80%;
+    margin: 18px auto 0;
+    overflow: hidden;
+  }
+
+  .countdown .clock span,
+  .countdown .clock i {
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    font-size: 23px;
+    float: left;
+  }
+
+  .countdown .clock span {
+    width: 16%;
+    height: auto;
+    border-radius: 2px;
+    background-color: #303430;
+  }
+
+  .countdown .clock i {
+    width: 16%;
+    font-style: normal;
+  }
+
+
+
+
+/* 轮播图 */
+.slider {
+    width: 100%;
+    max-width: 560px;
+    height: 400px;
+    margin: 5% auto 0;
+    overflow: hidden;
+
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 320px;
+}
+
+.slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.slider-footer {
+    height: 80px;
+    background-color: rgb(100, 67, 68);
+    padding: 12px 12px 0 12px;
+    position: relative;
+}
+
+.slider-footer .toggle {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    display: flex;
+}
+
+.slider-footer .toggle button {
+    margin-right: 12px;
+    width: 28px;
+    height: 28px;
+    appearance: none;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.slider-footer .toggle button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.slider-footer p {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.slider-indicator {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.slider-indicator li {
+    width: 8px;
+    height: 8px;
+    margin: 4px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+.slider-indicator li.active {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+
+.middle-column .content .video-column p {
+    margin-top: 10px;
+}
+.middle-column .content .video-column video {
+    width: 100%;
+    height: auto;
+}
+
+
+.middle-column .gamesweb ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.middle-column .gamesweb ul li {
+    width: 20%;
+    height: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #eef9f4;
+    top: 20px; /* 示例值 */
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    
+}
+
+.middle-column .gamesweb ul li:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.middle-column .gamesweb ul li img {
+    width: 100%;
+    height: 100px;
+    
+}
+
+.middle-column .gamesweb li p {
+    font-size: 100%;
+    line-height: 50px;
+    color: cadetblue;
+}
+
+.right-column .user-info p{
+    width: 100%;
+    height: 50px;
+    background-color: #eef9f4;
+
+}
+

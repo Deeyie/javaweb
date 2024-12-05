@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://jakarta.apache.org/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <default-context-path>/</default-context-path>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>20</session-timeout>
+    </session-config>
+
+
+    <servlet>
+        <servlet-name>UserActionServlet</servlet-name>
+        <servlet-class>com.servlet.admin.UserActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserActionServlet</servlet-name>
+        <url-pattern>/userAction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MessagesActionServlet</servlet-name>
+        <servlet-class>com.servlet.admin.MessagesActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessagesActionServlet</servlet-name>
+        <url-pattern>/messagesAction</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/user-login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminLogin</servlet-name>
+        <servlet-class>com.servlet.admin.AdminLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLogin</servlet-name>
+        <url-pattern>/admin-login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>com.servlet.SignupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/user-signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/user-logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForgetPassServlet</servlet-name>
+        <servlet-class>com.servlet.ForgetPassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgetPassServlet</servlet-name>
+        <url-pattern>/user-forget</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForgetPass.jsp</servlet-name>
+        <jsp-file>/jsp/ForgetPass.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgetPass.jsp</servlet-name>
+        <url-pattern>/ForgetPass.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userSign.jsp</servlet-name>
+        <jsp-file>/jsp/userSign.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userSign.jsp</servlet-name>
+        <url-pattern>/userSign.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ErrorPage.jsp</servlet-name>
+        <jsp-file>/jsp/ErrorPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorPage.jsp</servlet-name>
+        <url-pattern>/ErrorPage.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>personalInfo.jsp</servlet-name>
+        <jsp-file>/jsp/personalInfo.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>personalInfo.jsp</servlet-name>
+        <url-pattern>/personalInfo.jsp</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>discussions.jsp</servlet-name>
+        <jsp-file>/jsp/discussions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>discussions.jsp</servlet-name>
+        <url-pattern>/discussions.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>index.jsp</servlet-name>
+        <jsp-file>/jsp/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index.jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>messagewall.jsp</servlet-name>
+        <jsp-file>/jsp/messagewall.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>messagewall.jsp</servlet-name>
+        <url-pattern>/messagewall.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>barrage.jsp</servlet-name>
+        <jsp-file>/jsp/barrage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>barrage.jsp</servlet-name>
+        <url-pattern>/barrage.jsp</url-pattern>
+    </servlet-mapping>
+
+
+    <mime-mapping>
+        <extension>js</extension>
+        <mime-type>application/javascript</mime-type>
+    </mime-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/errorPage/error404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/errorPage/error500.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/jsp/errorPage/error403.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>501</error-code>
+        <location>/jsp/errorPage/error501.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/jsp/errorPage/error.jsp</location>
+    </error-page>
+
+    <servlet>
+        <servlet-name>loadBarrages</servlet-name>
+        <servlet-class>com.servlet.LoadMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loadBarrages</servlet-name>
+        <url-pattern>/loadBarrages</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sendMessage</servlet-name>
+        <servlet-class>com.servlet.SendMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendMessage</servlet-name>
+        <url-pattern>/sendMessage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sendBarrage</servlet-name>
+        <servlet-class>com.servlet.SendBarrageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sendBarrage</servlet-name>
+        <url-pattern>/sendBarrage</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>admin.jsp</servlet-name>
+        <jsp-file>/jsp/admin/admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin.jsp</servlet-name>
+        <url-pattern>/admin.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminLogin.jsp</servlet-name>
+        <jsp-file>/jsp/admin/adminLogin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminLogin.jsp</servlet-name>
+        <url-pattern>/adminLogin.jsp</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>userManagement.jsp</servlet-name>
+        <jsp-file>/jsp/admin/userManagement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userManagement.jsp</servlet-name>
+        <url-pattern>/userManagement.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>messageManagement.jsp</servlet-name>
+        <jsp-file>/jsp/admin/messageManagement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>messageManagement.jsp</servlet-name>
+        <url-pattern>/messageManagement.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>barrageManagement.jsp</servlet-name>
+        <jsp-file>/jsp/admin/barrageManagement.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>barrageManagement.jsp</servlet-name>
+        <url-pattern>/barrageManagement.jsp</url-pattern>
+    </servlet-mapping>
+</web-app>

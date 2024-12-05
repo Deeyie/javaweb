@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebContextManager">
+    <option name="state">
+      <map>
+        <entry key="file://$PROJECT_DIR$/web/HTML/home.html" value="file://$PROJECT_DIR$/web/HTML" />
+        <entry key="file://$PROJECT_DIR$/web/HTML/index.html" value="file://$PROJECT_DIR$/web/HTML" />
+        <entry key="file://$PROJECT_DIR$/web/JSP/Home.jsp" value="file://$PROJECT_DIR$/web/JSP" />
+        <entry key="file://$PROJECT_DIR$/web/JSP/index.jsp" value="file://$PROJECT_DIR$/web/JSP" />
+        <entry key="file://$PROJECT_DIR$/web/css" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/css/base.css" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/js/getBack.js" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/ErrorPage.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/ForgetPass.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/Home.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/Login.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/Signup.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/admin/admin.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/admin/adminLogin.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/barrage.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/error404.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/index.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/messagewall.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/more.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/slider.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/userInfoDisplay.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/jsp/userSign.jsp" value="file://$PROJECT_DIR$/web" />
+      </map>
+    </option>
+  </component>
+</project>

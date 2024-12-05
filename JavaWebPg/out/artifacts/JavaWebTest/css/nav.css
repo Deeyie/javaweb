@@ -1,0 +1,11 @@
+#nav{width: 100%;background: #004183;}
+.navwrap{width: 1180px;height: 40px;margin: 0 auto;}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 40px;
+    list-style: none;
+}
+a{line-height: 40px;font-weight: bold;margin: 0 10px;color: #FFFFFF;text-decoration: none;}
+a:hover{color: #ff3d3d;}

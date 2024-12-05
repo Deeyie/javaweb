@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <jsp-config>
+        <taglib>
+            <taglib-uri>http://jakarta.apache.org/jstl/core</taglib-uri>
+            <taglib-location>/WEB-INF/c.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <default-context-path>/</default-context-path>
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>main.java.com.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/user-login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignupServlet</servlet-name>
+        <servlet-class>main.java.com.servlet.SignupServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignupServlet</servlet-name>
+        <url-pattern>/user-signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>main.java.com.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/user-logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForgetPassServlet</servlet-name>
+        <servlet-class>main.java.com.servlet.ForgetPassServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgetPassServlet</servlet-name>
+        <url-pattern>/user-forget</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login.jsp</servlet-name>
+        <jsp-file>/jsp/Login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login.jsp</servlet-name>
+        <url-pattern>/Login.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Signup.jsp</servlet-name>
+        <jsp-file>/jsp/Signup.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Signup.jsp</servlet-name>
+        <url-pattern>/Signup.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ForgetPass.jsp</servlet-name>
+        <jsp-file>/jsp/ForgetPass.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForgetPass.jsp</servlet-name>
+        <url-pattern>/ForgetPass.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginSuccess.jsp</servlet-name>
+        <jsp-file>/jsp/LoginSuccess.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginSuccess.jsp</servlet-name>
+        <url-pattern>/LoginSuccess.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ErrorPage.jsp</servlet-name>
+        <jsp-file>/jsp/ErrorPage.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ErrorPage.jsp</servlet-name>
+        <url-pattern>/ErrorPage.jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Home.jsp</servlet-name>
+        <jsp-file>/jsp/Home.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Home.jsp</servlet-name>
+        <url-pattern>/Home.jsp</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>index.html</servlet-name>
+        <jsp-file>/html/index.html</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index.html</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>index.jsp</servlet-name>
+        <jsp-file>/jsp/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index.jsp</servlet-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </servlet-mapping>
+
+    <mime-mapping>
+        <extension>js</extension>
+        <mime-type>application/javascript</mime-type>
+    </mime-mapping>
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error404.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/error500.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>403</error-code>
+        <location>/jsp/error403.jsp</location>
+    </error-page>
+
+    <error-page>
+        <error-code>501</error-code>
+        <location>/jsp/error501.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.Throwable</exception-type>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+
+
+
+
+
+</web-app>

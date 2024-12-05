@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="StarPath archive">
+    <output-path>$PROJECT_DIR$/out/artifacts/StarPath_archive</output-path>
+    <root id="archive" name="StarPath archive.war">
+      <element id="artifact" artifact-name="StarPath" />
+    </root>
+  </artifact>
+</component>
